@@ -75,5 +75,6 @@ Hand movements are captured through leap motion LM010 capture, and I'll use proc
 3. Hand recognition generates a large number of pixels that make the image loading too slow.
 <img width="1018" alt="9" src="https://github.com/Jinaisrz/final_paper/assets/115119995/efde23f6-e1e4-4ae2-a76d-f9c7c9f3aabc">
 <img width="873" alt="10" src="https://github.com/Jinaisrz/final_paper/assets/115119995/0a7e222e-ecc5-4b05-9d62-f1ccb1f52935">
+
 4. Difficult to see hand outline
 <img width="1027" alt="11" src="https://github.com/Jinaisrz/final_paper/assets/115119995/12e31ac5-7f53-4135-988c-cad2656fb222">
