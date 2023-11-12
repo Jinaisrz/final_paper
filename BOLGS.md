@@ -94,3 +94,6 @@ I found a reference where the particles and interconnecting lines can represent 
 
 ### Reference:
 [https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF](https://openprocessing.org/sketch/1901346)https://openprocessing.org/sketch/1901346
+
+## How are particles generated and how are particles connected to each other into visual social networks?
+
