@@ -80,12 +80,12 @@ Hand movements are captured through leap motion LM010 capture, and I'll use proc
 <img width="1027" alt="11" src="https://github.com/Jinaisrz/final_paper/assets/115119995/12e31ac5-7f53-4135-988c-cad2656fb222">
 
 # Week 14: 10.2-10.8
-## I use the computer's camera to recognise my hand
+## I use P5.js and the computer's camera to recognise my hand
 The hand has 20 bone points, and every two of them can connect a joint of the hand, which means that every 4 vectors connect one finger.
 <img width="982" alt="14" src="https://github.com/Jinaisrz/final_paper/assets/115119995/401f5aee-8d33-4aca-87f6-387457af909a">
 <img width="1037" alt="14 1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/dde48631-1b58-439b-927e-ba88e106c590">
 
-### Reference:
+### The reference of hand model:
 https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
 
 
@@ -96,4 +96,33 @@ I found a reference where the particles and interconnecting lines can represent 
 [https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF](https://openprocessing.org/sketch/1901346)https://openprocessing.org/sketch/1901346
 
 ## How are particles generated and how are particles connected to each other into visual social networks?
+### Theory of Particle Neighbour Technology
+In the ParticleSystem class, there is a discoverNeighbours method that discovers neighbouring particles by calculating the distance between them. This method checks the distance between each particle and other particles and classifies them as "neighbours" if they are neither too close (more than MIN_TRI_DISTANCE) nor too far (less than MAX_TRI_DISTANCE). As in Figure, the maximum value of 10 between particles, it will be centered in the radius of the particle as the centre of the induction of adjacent particles, through the a.neighbourhood.push(b,c) will be b and c particles placed in the array of neighbours of the particle a, in which push can be added to the end of the array with one or more elements, and ultimately, b, c as the neighbours of the a, they can satisfy the conditions for the formation of triangles, while d , e, and f are too far away to satisfy the condition.
+<img width="1101" alt="15" src="https://github.com/Jinaisrz/final_paper/assets/115119995/4c2ec60a-beaa-4e4f-a658-b675a4d8aeb7">
 
+### Technical process of forming triangles using addTriangles algorithm
+(1) Confirmation of Neighbourhood:
+Particles a, b, c satisfy the condition that they are neighbours of each other as determined by discoverNeighbours method and traverse the array of particles, compare the distance between particles and add the particles that are within a certain distance to the a.neighbours array.
+
+(2) Pass the neighbours array:
+When the number of particles in a's neighbours array meets the conditions for creating triangles, this array is passed to the addTriangles method of the TriangleSystem class.
+
+(3) Creating Triangle Instances:
+The addTriangles method creates an instance of the Triangle class based on the neighbours array, which uses the positions of the three particles as the vertices of the triangle.
+
+(4) Storing Triangles:
+Each Triangle instance created is added to the internal array this.triangles of the TriangleSystem class.
+
+(5) Drawing triangles:
+Finally, in the display method, the TriangleSystem class iterates over all the created Triangle instances and draws them using the beginShape and endShape functions.
+
+<img width="381" alt="16" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8a83845d-3185-4223-b76a-1337011b4658">
+
+## How do particles and triangles follow the movement?
+Points a and b are two bone points that are connected to be the vector of joints. Then a random red point is generated on the vector based on GetPoints. Then make a normal line at the red point position of a vector, offsetPointByWidth generates the blue bias point, and offsetDistance sets the offset range to ±10. Use discoverNeighbours in ParticleSystem to get the bias points' position, then use addTriangles to generate the neighbourhood data, then use display to render the triangles out.
+<img width="1049" alt="17" src="https://github.com/Jinaisrz/final_paper/assets/115119995/3f5571a1-0e5f-4f67-ab6f-214e9ccd51f1">
+
+# Week 14: 10.9-10.15
+## Mean Squared Error (MSE) for determining the "handshake" behaviour
+In this week, In our system, the logic for detecting a handshake and increasing the number of particles and triangles heavily relies on calculating the Mean Squared Error (MSE) of key points on the hand. Mean Squared Error is a measure used to quantify the difference between sets of values. In this context, it's used to determine how close the key points of a hand are to each other in order to recognize if a handshake has occurred. When the hand is open, the 20 key points are more dispersed. Conversely, during a handshake gesture, these 20 points are collectively closer, resulting in an MSE value less than 6,000. Therefore, when the MSE drops below this threshold, it is determined that a handshake gesture has been completed.
+<img width="926" alt="18" src="https://github.com/Jinaisrz/final_paper/assets/115119995/98fb6b4f-d334-4d5b-aa8a-8317dc58eabb">
