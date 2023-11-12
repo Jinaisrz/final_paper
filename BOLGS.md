@@ -49,7 +49,7 @@ Unsatisfied with the first scenario, I rethought a new one and settled on one th
 
 I create a social platform, the audience can experience the project from the user's perspective. This plan is inspired by people's the most typical trust behaviour-- the "handshake".
 
-## Experience the process:
+### Experience the process:
 
 1. When the audience uses my social platform, they first need to enter their username, and their interest direction.
 
@@ -57,14 +57,14 @@ I create a social platform, the audience can experience the project from the use
 
 3. When the user's interaction frequency and interaction trust level reaches a hight level, the system will change, from the original people actively choose with whom to shake hands, into the system to help you choose with whom to shake hands (for example: the player in front of the different trust level users, one of them is a high-level user with a title, the player with whom to shake hands, the system will automatically reject, and display 'your trust level is not enough, you have been given'), thus making irony.
 
-## Experience the process:
+### Experience the process:
 Hand movements are captured through leap motion LM010 capture, and I'll use processing to write the visuals and interactions.
 <img width="359" alt="6" src="https://github.com/Jinaisrz/final_paper/assets/115119995/08dac55f-8be9-4b9e-803a-dbe73ea54ad3">
 
-## Visual reference, Hand social network structure and Hand Angle:
+### Visual reference, Hand social network structure and Hand Angle:
 <img width="1121" alt="7" src="https://github.com/Jinaisrz/final_paper/assets/115119995/aae995ce-a3db-4d5c-a3e7-a1fc8dd1901d">
 
-## Main Visual Design
+### Main Visual Design
 <img width="1293" alt="8" src="https://github.com/Jinaisrz/final_paper/assets/115119995/3e4d8443-b8f4-4c15-a564-ecd39d34a297">
 
 
