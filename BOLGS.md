@@ -41,3 +41,6 @@ Based on my research in the previous weeks, I thought about the scenarios and I 
 
 ## Week 12: 9.18-9.24
 People to "call" behaviour in front of the screen receiver speaker to send their preferences for interaction, the system will automatically match a community point, the more people interact with the community in front of the screen, the coarser the strength of the relationship, next to the interaction to achieve the trust index, and in the strength of the relationship with the algorithm inside! visual elements such as vision, delivery of interactive content, and empathy. But when people stop interacting, the system allows the strength to diminish and people are in a passive interaction process, which is used to satirise the impact of the system on people's "trust" building, until finally the screen plays a film on the evolution of the trust structure of the digital strong ties to make a viewpoint.
+![5](https://github.com/Jinaisrz/final_paper/assets/115119995/a1adecba-22dc-47cb-a62d-9e47949b1d17)
+
+
