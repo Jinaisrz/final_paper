@@ -82,6 +82,8 @@ Hand movements are captured through leap motion LM010 capture, and I'll use proc
 # Week 14: 10.2-10.8
 ## I use the computer's camera to recognise my hand
 The hand has 20 bone points, and every two of them can connect a joint of the hand, which means that every 4 vectors connect one finger.
+<img width="982" alt="14" src="https://github.com/Jinaisrz/final_paper/assets/115119995/401f5aee-8d33-4aca-87f6-387457af909a">
+<img width="1037" alt="14 1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/dde48631-1b58-439b-927e-ba88e106c590">
 
 ## Reference:
 https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
