@@ -6,6 +6,7 @@ My previous research explored the changes in Chinese strong ties culture in the 
 
 ## Week 2: 7.10-7.16
 In that week, I analyzed Dr. Yanjie Bian's definition of traditional strong ties, the process of upgrading weak ties into digital strong ties, and the initial and stable phases of trust building in digital strong ties, and found that trust is like a kind of "social currency" that circulates multidimensionally in individual and group strong ties, because people have to build up enough trust in order to establish digital strong ties in any circumstances, and this kind of digital strong ties must have been born from long-time interactions with multidimensional interactions in the digital platform.
+
 <img width="727" alt="3" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2ba4a90e-fc3a-4751-a792-80031d00708d">
 
 ## Week 3: 7.17-7.23
