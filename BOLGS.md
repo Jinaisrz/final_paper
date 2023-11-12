@@ -67,5 +67,13 @@ Hand movements are captured through leap motion LM010 capture, and I'll use proc
 ### Main Visual Design
 <img width="1293" alt="8" src="https://github.com/Jinaisrz/final_paper/assets/115119995/3e4d8443-b8f4-4c15-a564-ecd39d34a297">
 
-
-
+# Week 13: 9.25-10.1
+## Cancell leapmotion & Processing plan
+### Problems:
+1. Thresholding and edge detection process the hand image to make the pixel sense too strong.
+2. Fingers will not be recognised due to the dimming of the light, making the test results even worse.
+3. Hand recognition generates a large number of pixels that make the image loading too slow.
+<img width="1018" alt="9" src="https://github.com/Jinaisrz/final_paper/assets/115119995/efde23f6-e1e4-4ae2-a76d-f9c7c9f3aabc">
+<img width="873" alt="10" src="https://github.com/Jinaisrz/final_paper/assets/115119995/0a7e222e-ecc5-4b05-9d62-f1ccb1f52935">
+4. Difficult to see hand outline
+<img width="1027" alt="11" src="https://github.com/Jinaisrz/final_paper/assets/115119995/12e31ac5-7f53-4135-988c-cad2656fb222">
