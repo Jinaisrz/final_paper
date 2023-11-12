@@ -2,7 +2,8 @@
 My previous research explored the changes in Chinese strong ties culture in the context of the Internet and found that traditional strong ties were transformed into more multidimensional digital strong ties. In that week's research, I read a lot of literature, and in one of the studies, I pointed out that due to the emergence of the Internet, the traditional Chinese blood ties, geographic ties, karmic ties, and interest relationship have become digital strong ties, and that "interest relationship" are the most emerging and easier group to reach digital strong ties, and I used the interviews with members of gaming and fan circles to deduce and prove a model for the formation of digital strong ties. We reasoned and proved the formation model of digital strong ties, and found that digital strong ties has wider coverage and lower maintenance cost than traditional strong ties.
 
 <img width="1050" alt="1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/4e5ed5e8-ed6e-4972-bbfe-d1c7e16fc7a0">
-<img width="1015" alt="2" src="https://github.com/Jinaisrz/final_paper/assets/115119995/9423a571-ccd9-42a0-9b01-a361ee8fd176">
+
+<img width="1015" alt="2" src="https://github.com/Jinaisrz/final_paper/assets/115119995/93760580-4b5d-43ad-bf77-b0660e89c6fa">
 
 ## Week 2: 7.10-7.16
 In that week, I analyzed Dr. Yanjie Bian's definition of traditional strong ties, the process of upgrading weak ties into digital strong ties, and the initial and stable phases of trust building in digital strong ties, and found that trust is like a kind of "social currency" that circulates multidimensionally in individual and group strong ties, because people have to build up enough trust in order to establish digital strong ties in any circumstances, and this kind of digital strong ties must have been born from long-time interactions with multidimensional interactions in the digital platform.
