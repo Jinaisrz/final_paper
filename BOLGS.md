@@ -88,6 +88,7 @@ The hand has 20 bone points, and every two of them can connect a joint of the ha
 ### Reference:
 https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
 
+
 I found a reference where the particles and interconnecting lines can represent user points and social networks.
 ![13](https://github.com/Jinaisrz/final_paper/assets/115119995/31b2260d-20b9-4133-8e37-67b754923934)
 
