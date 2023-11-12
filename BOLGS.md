@@ -39,8 +39,21 @@ During that week, I streamlined any lengthy or unnecessary content in the paper 
 ## Week 11: 9.11-9.17
 Based on my research in the previous weeks, I thought about the scenarios and I looked at a range of computer artists such as: Rafael Lozano-Hemmer's "The Listening Post" by Mark Hansen and Ben Rubin - a dynamic art installation that collects and broadcasts text from internet chat rooms in real time. Jenny Holzer's LED installations - Jenny Holzer uses scrolling LED text to convey information, thoughts and social commentary. "Processing" by Casey Reas and Ben Fry. Kyle McDonald's "Social Soul," an immersive, interactive installation that allows users to experience the social media lives of others, and Golan Levin, a new media artist and engineer who often explores the interactions between humans and machines. His works such as "Double-Taker (Snout)" use computer vision and robotics to mimic human social behaviour.
 
-## Week 12: 9.18-9.24
+After looking at the artist references, I started thinking about project ideas.
+
 People to "call" behaviour in front of the screen receiver speaker to send their preferences for interaction, the system will automatically match a community point, the more people interact with the community in front of the screen, the coarser the strength of the relationship, next to the interaction to achieve the trust index, and in the strength of the relationship with the algorithm inside! visual elements such as vision, delivery of interactive content, and empathy. But when people stop interacting, the system allows the strength to diminish and people are in a passive interaction process, which is used to satirise the impact of the system on people's "trust" building, until finally the screen plays a film on the evolution of the trust structure of the digital strong ties to make a viewpoint.
 ![5](https://github.com/Jinaisrz/final_paper/assets/115119995/a1adecba-22dc-47cb-a62d-9e47949b1d17)
 
+## Week 12: 9.18-9.24
+Unsatisfied with the first scenario, I rethought a new one and settled on one that was more related to human "trust" behaviour.
+
+I create a social platform, the audience can experience the project from the user's perspective. This plan is inspired by people's the most typical trust behaviour-- the "handshake".
+
+# Experience the process:
+
+1. When the audience uses my social platform, they first need to enter their username, and their interest direction.
+
+2. After the audience enters the platform, they will first see a simple social network of hand (the bone points of the hand is the friends' data points, and on the data point, there will be the friends'  interest direction, the trust level, the messages, emoji, and so on) The audience will strengthen the frequency of interaction by shaking hand with each time. The beginning of the handshake also gradually recommends you choose the interest group.
+
+3. When the user's interaction frequency and interaction trust level reaches a hight level, the system will change, from the original people actively choose with whom to shake hands, into the system to help you choose with whom to shake hands (for example: the player in front of the different trust level users, one of them is a high-level user with a title, the player with whom to shake hands, the system will automatically reject, and display 'your trust level is not enough, you have been given'), thus making irony.
 
