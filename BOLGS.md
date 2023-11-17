@@ -68,6 +68,11 @@ Hand movements are captured through leap motion LM010 capture, and I'll use proc
 <img width="1293" alt="8" src="https://github.com/Jinaisrz/final_paper/assets/115119995/3e4d8443-b8f4-4c15-a564-ecd39d34a297">
 
 # Week 13: 9.25-10.1
+## Tutor feedback
+<img width="936" alt="feedback1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/51e04797-217e-4910-b2b4-bad6bd39f471">
+
+Much of Marysia's feedback came from the social research portion of the dissertation, which required sorting out the dissertation format, haver citing references. And go ahead and develop a technical prototype if possible.
+
 ## Cancell leapmotion & Processing plan
 ### Problems:
 1. Thresholding and edge detection process the hand image to make the pixel sense too strong.
@@ -80,6 +85,11 @@ Hand movements are captured through leap motion LM010 capture, and I'll use proc
 <img width="1027" alt="11" src="https://github.com/Jinaisrz/final_paper/assets/115119995/12e31ac5-7f53-4135-988c-cad2656fb222">
 
 # Week 14: 10.2-10.8
+## Tutor feedback
+<img width="928" alt="feedback2" src="https://github.com/Jinaisrz/final_paper/assets/115119995/39dd6cb6-7308-4b74-9957-cfc120b3f66d">
+
+The main tip from the mentor feedback is to avoid really storing personal information such as the player's face, email address, etc. as much as possible, which may involve some unnecessary privacy risks, and feel free to store usernames, passwords, and other data.
+
 ## I use P5.js and the computer's camera to recognise my hand
 The hand has 20 bone points, and every two of them can connect a joint of the hand, which means that every 4 vectors connect one finger.
 <img width="982" alt="14" src="https://github.com/Jinaisrz/final_paper/assets/115119995/401f5aee-8d33-4aca-87f6-387457af909a">
@@ -161,6 +171,4 @@ This mean square error is obtained by calculating the sum of the squares of the 
 4. Then by defining three colour speeds (Rspeed, Gspeed, Bspeed) which are randomly determined to control the rate of change for each colour channel. In the final update method, you update the values for each colour channel. The colour values are increased or decreased according to their corresponding speed. Each colour value varies in a range from 0 to 255. If the colour value reaches the boundary of this range, the direction of the speed is reversed (this is achieved by means of the ternary operator) so that the colour value varies within the specified range. This class provides a mechanism to allow colours to change dynamically over time. Calling the update method from within an animation loop (such as the draw function) can be used to achieve a smooth transition of colours.
 
 <img width="547" alt="27" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8518351e-7351-411c-9cee-b3c5b8388591">
-
-
 
