@@ -171,4 +171,5 @@ This mean square error is obtained by calculating the sum of the squares of the 
 4. Then by defining three colour speeds (Rspeed, Gspeed, Bspeed) which are randomly determined to control the rate of change for each colour channel. In the final update method, you update the values for each colour channel. The colour values are increased or decreased according to their corresponding speed. Each colour value varies in a range from 0 to 255. If the colour value reaches the boundary of this range, the direction of the speed is reversed (this is achieved by means of the ternary operator) so that the colour value varies within the specified range. This class provides a mechanism to allow colours to change dynamically over time. Calling the update method from within an animation loop (such as the draw function) can be used to achieve a smooth transition of colours.
 
 <img width="547" alt="27" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8518351e-7351-411c-9cee-b3c5b8388591">
+<img width="885" alt="28" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2c097b0f-e419-4059-8399-2130eb3bb1b0">
 
