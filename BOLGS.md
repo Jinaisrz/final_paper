@@ -88,7 +88,6 @@ The hand has 20 bone points, and every two of them can connect a joint of the ha
 ### The reference of hand model:
 https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
 
-
 I found a reference where the particles and interconnecting lines can represent user points and social networks.
 ![13](https://github.com/Jinaisrz/final_paper/assets/115119995/31b2260d-20b9-4133-8e37-67b754923934)
 
@@ -126,3 +125,33 @@ Points a and b are two bone points that are connected to be the vector of joints
 ## Mean Squared Error (MSE) for determining the "handshake" behaviour
 In this week, In our system, the logic for detecting a handshake and increasing the number of particles and triangles heavily relies on calculating the Mean Squared Error (MSE) of key points on the hand. Mean Squared Error is a measure used to quantify the difference between sets of values. In this context, it's used to determine how close the key points of a hand are to each other in order to recognize if a handshake has occurred. When the hand is open, the 20 key points are more dispersed. Conversely, during a handshake gesture, these 20 points are collectively closer, resulting in an MSE value less than 6,000. Therefore, when the MSE drops below this threshold, it is determined that a handshake gesture has been completed.
 <img width="926" alt="18" src="https://github.com/Jinaisrz/final_paper/assets/115119995/98fb6b4f-d334-4d5b-aa8a-8317dc58eabb">
+
+# Week 15: 10.16-10.22
+## Particles can't disappear, they need to keep growing
+<img width="470" alt="22" src="https://github.com/Jinaisrz/final_paper/assets/115119995/75b74041-3c09-4ef0-8cba-b501352a089f">
+
+The differentiation is initialising lifespan, updating lifespan and checking if the particle is "dead", in which every time the move method is called, the lifespan value will be decreasing because of the code this.lifespan -= LIFESPAN_DECREMENT; and this is contrary to the concept of a continuously growing number of users. constantly decreasing, so that the particles have the phenomenon of death, and this is contrary to the concept of continuous growth of the number of users, so you need to this.lifespan -= LIFESPAN_DECREMENT commented out, so that the lifespan value is never less than 0, you can let the number of particles to continue to grow, the particles will be due to addTriangles constantly increasing the number of triangles.
+
+<img width="864" alt="19" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b2c98f8b-b20e-4a83-ac2e-c5698f934cc4">
+
+## Mean square error to determine the handshake and thus the colour change
+### Mean square error handshake judgement
+With my drawKeypoints function, the program uses the gesture recognition feature to detect hand poses. This procedure I started by traversing the predictions array, which contains the data for each hand recognised by the handpose model. For each hand's predictions, the program traverses all of its keypoints, draws those points, and calculates their mean square error with respect to the hand's centroid.
+
+<img width="460" alt="24" src="https://github.com/Jinaisrz/final_paper/assets/115119995/796666a5-fbf3-4f32-9c0a-96b9a2f3d1fb">
+
+This mean square error is obtained by calculating the sum of the squares of the distances from each keypoint to the centre point and dividing by the total number of keypoints. Based on the value of the mean square error, the program determines whether the hand is in a fisted state or not: if the mean square error is less than 6000 and the current isFist state is false, it is assumed that the hand is in a fisted state, and isFist is set to true, and the system.addParticle method is called to add particles in order to indicate that a fisted action is detected. Conversely, if the mean square error is greater than 6000, set isFist to false to indicate that the hand is not in a fist grip.
+
+<img width="566" alt="25" src="https://github.com/Jinaisrz/final_paper/assets/115119995/d88271b8-ac09-479b-ba1a-e5086fef61c9">
+
+### Resulting image of the mean square error handshake judgement
+<img width="857" alt="23" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b5737ada-0895-4c83-8acf-d6a7ff5362ae">
+
+### 握拳如何影响颜色
+1. 在三角形的颜色深浅其实是由
+
+
+<img width="1241" alt="20" src="https://github.com/Jinaisrz/final_paper/assets/115119995/feb96a37-2794-4406-87b5-c150c58bc729">
+
+<img width="316" alt="21" src="https://github.com/Jinaisrz/final_paper/assets/115119995/214e9ea9-fd0c-4b8d-acd5-89468d930b72">
+
