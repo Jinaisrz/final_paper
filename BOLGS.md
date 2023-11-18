@@ -173,3 +173,47 @@ This mean square error is obtained by calculating the sum of the squares of the 
 <img width="547" alt="27" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8518351e-7351-411c-9cee-b3c5b8388591">
 <img width="885" alt="28" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2c097b0f-e419-4059-8399-2130eb3bb1b0">
 
+# Week 16: 10.23-10.29
+## Resulting image of the mean square error handshake judgement
+
+### Defining option points (checkpoints)：
+There are three checkpoints defined in the checkChosen() function, which are located at specific locations on the canvas.
+
+<img width="473" alt="32" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f049ba8b-e86d-4440-9910-dd8be5029643">
+
+### Detects the position of the hand:
+The palm position is calculated in the drawKeypoints() function, the exact line number may vary depending on the rest of the code, which focuses on calculating the centre point of the bounding box.
+
+<img width="238" alt="33" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f134b82a-7bd2-4e03-9290-7b869ab1425a">
+
+### Determines how close the palm position is to the option point:
+This part is also in the checkChosen() function, which determines proximity by comparing the distance between the palm position and a predefined checkpoint:
+
+<img width="465" alt="34" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2077f695-cb7e-41e3-a973-cdb666e3c644">
+
+### Select processing:
+The code updates the state1 variable when it detects that the palm is close to one of the checkpoints and is in the fist state. This is also in the checkChosen() function.
+
+<img width="221" alt="35" src="https://github.com/Jinaisrz/final_paper/assets/115119995/72328afe-b4e5-4362-a92b-1c6c360b32c3">
+
+### Results:
+The error in selecting interest groups by hand recognition is very large because the control of the coordinates is problematic and can lead to trying to accurately select one while the other is also selected.
+
+<img width="1042" alt="29" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f7bdafe1-5fa2-4216-b861-4fc774c35d54">
+
+## Change to Mouse Selection
+<img width="555" alt="30" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8a15070a-ab2c-4810-a1c2-dc1240c9e1d7">
+
+
+## emoji选择
+<img width="1283" alt="emoji-1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/860cbb53-c9a6-499e-b602-8e2dd2db4d89">
+
+<img width="1284" alt="emoji-2" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2c5b273a-ddf3-4eb7-a14e-bacadb36f3ca">
+
+![女明星](https://github.com/Jinaisrz/final_paper/assets/115119995/6cec624b-3606-4534-88ca-85e31a6d535d)
+
+![埃隆马斯克](https://github.com/Jinaisrz/final_paper/assets/115119995/f53d7c77-c0e9-4a25-8827-dd05276952b1)
+
+
+
+
