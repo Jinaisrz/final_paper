@@ -115,30 +115,14 @@ I found a reference where the particles and interconnecting lines can represent 
 <img width="902" alt="截屏2023-11-22 15 57 09" src="https://github.com/Jinaisrz/final_paper/assets/115119995/5993bba6-3c5d-41d9-bd03-b52ecc69421e">
 
 然后通过TriangleSystem类管理一个三角形的集合，addTriangles方法会接收一组粒子neighbours的数组，首先检查输入数组的长度，确保有足够的粒子来形成三角形。使用一个嵌套循环，遍历neighbours 数组中的粒子。对于每个粒子，选择另外两个粒子，形成一个三角形。对于每一组三个粒子，创建一个 Triangle 对象，使用这三个粒子的位置作为三角形的顶点。
+
 <img width="440" alt="截屏2023-11-22 18 25 07" src="https://github.com/Jinaisrz/final_paper/assets/115119995/5ba8b247-495e-483d-8f6f-96d81277dd5e">
 
 将新创建的 Triangle 对象添加到TriangleSystem 维护的 ArrayList<Triangle> 集合中，最终形成三角形。
+
 <img width="700" alt="截屏2023-11-22 18 20 57" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b4c25a01-2756-44c4-b25a-c43786d49834">
 
 <img width="421" alt="截屏2023-11-22 15 55 52" src="https://github.com/Jinaisrz/final_paper/assets/115119995/918c501b-62da-4b7b-9597-42bab3e17044">
-
-### Technical process of forming triangles using addTriangles algorithm
-(1) Confirmation of Neighbourhood:
-Particles a, b, c satisfy the condition that they are neighbours of each other as determined by discoverNeighbours method and traverse the array of particles, compare the distance between particles and add the particles that are within a certain distance to the a.neighbours array.
-
-(2) Pass the neighbours array:
-When the number of particles in a's neighbours array meets the conditions for creating triangles, this array is passed to the addTriangles method of the TriangleSystem class.
-
-(3) Creating Triangle Instances:
-The addTriangles method creates an instance of the Triangle class based on the neighbours array, which uses the positions of the three particles as the vertices of the triangle.
-
-(4) Storing Triangles:
-Each Triangle instance created is added to the internal array this.triangles of the TriangleSystem class.
-
-(5) Drawing triangles:
-Finally, in the display method, the TriangleSystem class iterates over all the created Triangle instances and draws them using the beginShape and endShape functions.
-
-<img width="381" alt="16" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8a83845d-3185-4223-b76a-1337011b4658">
 
 ## How do particles and triangles follow the movement?
 Points a and b are two bone points that are connected to be the vector of joints. Then a random red point is generated on the vector based on GetPoints. Then make a normal line at the red point position of a vector, offsetPointByWidth generates the blue bias point, and offsetDistance sets the offset range to ±10. Use discoverNeighbours in ParticleSystem to get the bias points' position, then use addTriangles to generate the neighbourhood data, then use display to render the triangles out.
