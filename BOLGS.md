@@ -215,5 +215,8 @@ The error in selecting interest groups by hand recognition is very large because
 ![埃隆马斯克](https://github.com/Jinaisrz/final_paper/assets/115119995/f53d7c77-c0e9-4a25-8827-dd05276952b1)
 
 
+# Week 17: 10.30-11.5
 
+# Week 18: 11.6-11.13
 
+# Week 19: 11.14-11.21
