@@ -91,9 +91,12 @@ Much of Marysia's feedback came from the social research portion of the disserta
 The main tip from the mentor feedback is to avoid really storing personal information such as the player's face, email address, etc. as much as possible, which may involve some unnecessary privacy risks, and feel free to store usernames, passwords, and other data.
 
 ## I use P5.js and the computer's camera to recognise my hand
-The hand has 20 bone points, and every two of them can connect a joint of the hand, which means that every 4 vectors connect one finger.
-<img width="982" alt="14" src="https://github.com/Jinaisrz/final_paper/assets/115119995/401f5aee-8d33-4aca-87f6-387457af909a">
-<img width="1037" alt="14 1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/dde48631-1b58-439b-927e-ba88e106c590">
+我首先通过drawKeypoints函数首先遍历 predictions数组中的每个预测结果。每个关键点包含其在图像上的 x、y 坐标和一个置信度分数。对于每个预测结果，它遍历关键点数组。然后，它对每个关键点绘制一个圆圈，并且使用 line() 函数将每个关键点按顺序连接起来。这个函数还可以包含其他方式和逻辑来处理手势识别和界面反馈。
+
+<img width="1022" alt="截屏2023-11-21 17 53 44" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8d54bce0-28c6-401e-87ad-61d28361a919">
+
+<img width="1200" alt="截屏2023-11-21 17 47 50" src="https://github.com/Jinaisrz/final_paper/assets/115119995/1b75b6bc-cf46-4356-bfcb-31fdb5944ef9">
+
 
 ### The reference of hand model:
 https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
@@ -106,8 +109,18 @@ I found a reference where the particles and interconnecting lines can represent 
 
 ## How are particles generated and how are particles connected to each other into visual social networks?
 ### Theory of Particle Neighbour Technology
-In the ParticleSystem class, there is a discoverNeighbours method that discovers neighbouring particles by calculating the distance between them. This method checks the distance between each particle and other particles and classifies them as "neighbours" if they are neither too close (more than MIN_TRI_DISTANCE) nor too far (less than MAX_TRI_DISTANCE). As in Figure, the maximum value of 10 between particles, it will be centered in the radius of the particle as the centre of the induction of adjacent particles, through the a.neighbourhood.push(b,c) will be b and c particles placed in the array of neighbours of the particle a, in which push can be added to the end of the array with one or more elements, and ultimately, b, c as the neighbours of the a, they can satisfy the conditions for the formation of triangles, while d , e, and f are too far away to satisfy the condition.
-<img width="1101" alt="15" src="https://github.com/Jinaisrz/final_paper/assets/115119995/4c2ec60a-beaa-4e4f-a658-b675a4d8aeb7">
+我通过遍历 ParticleSystem 类中的 particles 数组，初始化一个空的 neighbours 数组，用于存储当前粒子的邻居，将当前粒子自身加入到 neighbours 数组中，通过这种遍历所有其他粒子，计算它们与当前粒子的距离。如果另一个粒子与当前粒子的距离在 MIN_TRI_DISTANCE 和 MAX_TRI_DISTANCE 之间，它被认为是一个邻居，并被加入到 neighbours 数组中。
+检查 neighbours 数组的长度。如果长度在一个特定的范围内（大于1且小于 MAX_PARTICLE_NEIGHBOURS），我这里用的是-40到40的判定距离，满足条件就调用 TriangleSystem 的 addTriangles 方法，并将 neighbours 数组作为参数传递。
+
+<img width="902" alt="截屏2023-11-22 15 57 09" src="https://github.com/Jinaisrz/final_paper/assets/115119995/5993bba6-3c5d-41d9-bd03-b52ecc69421e">
+
+然后通过TriangleSystem类管理一个三角形的集合，addTriangles方法会接收一组粒子neighbours的数组，首先检查输入数组的长度，确保有足够的粒子来形成三角形。使用一个嵌套循环，遍历neighbours 数组中的粒子。对于每个粒子，选择另外两个粒子，形成一个三角形。对于每一组三个粒子，创建一个 Triangle 对象，使用这三个粒子的位置作为三角形的顶点。
+<img width="440" alt="截屏2023-11-22 18 25 07" src="https://github.com/Jinaisrz/final_paper/assets/115119995/5ba8b247-495e-483d-8f6f-96d81277dd5e">
+
+将新创建的 Triangle 对象添加到TriangleSystem 维护的 ArrayList<Triangle> 集合中，最终形成三角形。
+<img width="700" alt="截屏2023-11-22 18 20 57" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b4c25a01-2756-44c4-b25a-c43786d49834">
+
+<img width="421" alt="截屏2023-11-22 15 55 52" src="https://github.com/Jinaisrz/final_paper/assets/115119995/918c501b-62da-4b7b-9597-42bab3e17044">
 
 ### Technical process of forming triangles using addTriangles algorithm
 (1) Confirmation of Neighbourhood:
