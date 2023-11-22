@@ -135,8 +135,21 @@ I found a reference where the particles and interconnecting lines can represent 
 
 <img width="316" alt="21" src="https://github.com/Jinaisrz/final_paper/assets/115119995/9f9e0c28-d09a-48bd-b20a-2251eaad1c9a">
 
-
 # Week 14: 10.9-10.15
+## Mean square error to determine the handshake and thus the colour change
+### Mean square error handshake judgement
+With my drawKeypoints function, the program uses the gesture recognition feature to detect hand poses. This procedure I started by traversing the predictions array, which contains the data for each hand recognised by the handpose model. For each hand's predictions, the program traverses all of its keypoints, draws those points, and calculates their mean square error with respect to the hand's centroid.
+
+<img width="460" alt="24" src="https://github.com/Jinaisrz/final_paper/assets/115119995/796666a5-fbf3-4f32-9c0a-96b9a2f3d1fb">
+
+This mean square error is obtained by calculating the sum of the squares of the distances from each keypoint to the centre point and dividing by the total number of keypoints. Based on the value of the mean square error, the program determines whether the hand is in a fisted state or not: if the mean square error is less than 6000 and the current isFist state is false, it is assumed that the hand is in a fisted state, and isFist is set to true, and the system.addParticle method is called to add particles in order to indicate that a fisted action is detected. Conversely, if the mean square error is greater than 6000, set isFist to false to indicate that the hand is not in a fist grip.
+
+<img width="566" alt="25" src="https://github.com/Jinaisrz/final_paper/assets/115119995/d88271b8-ac09-479b-ba1a-e5086fef61c9">
+
+### Resulting image of the mean square error handshake judgement
+<img width="857" alt="23" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b5737ada-0895-4c83-8acf-d6a7ff5362ae">
+
+# Week 15: 10.16-10.22
 ## Cancell process: Mean Squared Error (MSE) for determining the "handshake" behaviour
 本周我取消了，检测握手以及增加粒子和三角形数量的逻辑主要依赖于计算手部关键点的均方误差 (MSE)。平均平方误差是一种用于量化数值集之间差异的测量方法。在这里，它用于确定手部关键点之间的距离，以识别是否发生了握手。当手张开时，20 个关键点较为分散。反之，在握手的手势中，这 20 个关键点会相互靠近，从而导致 MSE 值小于 6000。因此，当 MSE 值低于这个阈值时，就可以判定握手手势已经完成。
 
@@ -150,10 +163,8 @@ I found a reference where the particles and interconnecting lines can represent 
 
 <img width="462" alt="截屏2023-11-22 19 10 46" src="https://github.com/Jinaisrz/final_paper/assets/115119995/35052477-5f7e-4356-8cfb-5ca8259883b9">
 
-<img width="431" alt="截屏2023-11-22 19 12 06" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b716cd41-49c5-43d0-a23a-8f71c0a1da8e">
+<img width="355" alt="截屏2023-11-22 19 17 14" src="https://github.com/Jinaisrz/final_paper/assets/115119995/c46264b9-3dc6-43da-947f-261998a6f0e9">
 
-
-# Week 15: 10.16-10.22
 ## Particles can't disappear, they need to keep growing
 <img width="470" alt="22" src="https://github.com/Jinaisrz/final_paper/assets/115119995/75b74041-3c09-4ef0-8cba-b501352a089f">
 
@@ -161,18 +172,6 @@ The differentiation is initialising lifespan, updating lifespan and checking if 
 
 <img width="864" alt="19" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b2c98f8b-b20e-4a83-ac2e-c5698f934cc4">
 
-## Mean square error to determine the handshake and thus the colour change
-### Mean square error handshake judgement
-With my drawKeypoints function, the program uses the gesture recognition feature to detect hand poses. This procedure I started by traversing the predictions array, which contains the data for each hand recognised by the handpose model. For each hand's predictions, the program traverses all of its keypoints, draws those points, and calculates their mean square error with respect to the hand's centroid.
-
-<img width="460" alt="24" src="https://github.com/Jinaisrz/final_paper/assets/115119995/796666a5-fbf3-4f32-9c0a-96b9a2f3d1fb">
-
-This mean square error is obtained by calculating the sum of the squares of the distances from each keypoint to the centre point and dividing by the total number of keypoints. Based on the value of the mean square error, the program determines whether the hand is in a fisted state or not: if the mean square error is less than 6000 and the current isFist state is false, it is assumed that the hand is in a fisted state, and isFist is set to true, and the system.addParticle method is called to add particles in order to indicate that a fisted action is detected. Conversely, if the mean square error is greater than 6000, set isFist to false to indicate that the hand is not in a fist grip.
-
-<img width="566" alt="25" src="https://github.com/Jinaisrz/final_paper/assets/115119995/d88271b8-ac09-479b-ba1a-e5086fef61c9">
-
-### Resulting image of the mean square error handshake judgement
-<img width="857" alt="23" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b5737ada-0895-4c83-8acf-d6a7ff5362ae">
 
 ### Grip frequency affects colour change (for trust level design of colours)
 1. the colour shade change of triangle is actually the colour shade change formed by whether multiple triangles overlap or not, for example, the particle generation is generated with the hand's as the vector, no matter how the hand moves, the particle's position with the vector will always be relatively unchanged, so the triangles generated by the same three points will be deeper in colour while the colour of the one alone will be lighter.
