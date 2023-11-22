@@ -91,7 +91,7 @@ Much of Marysia's feedback came from the social research portion of the disserta
 The main tip from the mentor feedback is to avoid really storing personal information such as the player's face, email address, etc. as much as possible, which may involve some unnecessary privacy risks, and feel free to store usernames, passwords, and other data.
 
 ## I use P5.js and the computer's camera to recognise my hand
-我首先通过drawKeypoints函数首先遍历 predictions数组中的每个预测结果。每个关键点包含其在图像上的 x、y 坐标和一个置信度分数。对于每个预测结果，它遍历关键点数组。然后，它对每个关键点绘制一个圆圈，并且使用 line() 函数将每个关键点按顺序连接起来。这个函数还可以包含其他方式和逻辑来处理手势识别和界面反馈。
+I begin by first iterating through each prediction in the predictions array via the drawKeypoints function. Each keypoint contains its x, y coordinates on the image and a confidence score. For each prediction, it iterates through the array of keypoints. It then draws a circle for each keypoint and uses the line() function to connect each keypoint in order. This function can also contain other ways and logic to handle gesture recognition and interface feedback.
 
 <img width="1022" alt="截屏2023-11-21 17 53 44" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8d54bce0-28c6-401e-87ad-61d28361a919">
 
@@ -108,27 +108,27 @@ I found a reference where the particles and interconnecting lines can represent 
 
 ## How are particles generated and how are particles connected to each other into visual social networks?
 ### Theory of Particle Neighbour Technology
-我通过遍历 ParticleSystem 类中的 particles 数组，初始化一个空的 neighbours 数组，用于存储当前粒子的邻居，将当前粒子自身加入到 neighbours 数组中，通过这种遍历所有其他粒子，计算它们与当前粒子的距离。如果另一个粒子与当前粒子的距离在 MIN_TRI_DISTANCE 和 MAX_TRI_DISTANCE 之间，它被认为是一个邻居，并被加入到 neighbours 数组中。
-检查 neighbours 数组的长度。如果长度在一个特定的范围内（大于1且小于 MAX_PARTICLE_NEIGHBOURS），我这里用的是-40到40的判定距离，满足条件就调用 TriangleSystem 的 addTriangles 方法，并将 neighbours 数组作为参数传递。
+I initialise an empty neighbours array to store the neighbours of the current particle by traversing the particles array in the ParticleSystem class, add the current particle itself to the neighbours array, and by this traversing through all the other particles and calculating their distance from the current particle. If another particle has a distance between MIN_TRI_DISTANCE and MAX_TRI_DISTANCE from the current particle, it is considered a neighbour and is added to the neighbours array.
+Check the length of the neighbours array. If the length is within a specific range (greater than 1 and less than MAX_PARTICLE_NEIGHBOURS), I'm using the -40 to 40 determination distance here, and the condition is met, the addTriangles method of TriangleSystem is called and the neighbours array is passed as an argument.
 
 <img width="902" alt="截屏2023-11-22 15 57 09" src="https://github.com/Jinaisrz/final_paper/assets/115119995/5993bba6-3c5d-41d9-bd03-b52ecc69421e">
 
-然后通过TriangleSystem类管理一个三角形的集合，addTriangles方法会接收一组粒子neighbours的数组，首先检查输入数组的长度，确保有足够的粒子来形成三角形。使用一个嵌套循环，遍历neighbours 数组中的粒子。对于每个粒子，选择另外两个粒子，形成一个三角形。对于每一组三个粒子，创建一个 Triangle 对象，使用这三个粒子的位置作为三角形的顶点。
+A collection of triangles is then managed through the TriangleSystem class. The addTriangles method takes an array of particle neighbours, and first checks the length of the input array to make sure there are enough particles to form a triangle. A nested loop is used to iterate through the particles in the array of neighbours. For each particle, select two other particles to form a triangle. For each group of three particles, create a Triangle object that uses the positions of the three particles as the vertices of the triangle.
 
 <img width="440" alt="截屏2023-11-22 18 25 07" src="https://github.com/Jinaisrz/final_paper/assets/115119995/5ba8b247-495e-483d-8f6f-96d81277dd5e">
 
-将新创建的 Triangle 对象添加到TriangleSystem 维护的 ArrayList<Triangle> 集合中，最终形成三角形。
+Adds the newly created Triangle object to the ArrayList<Triangle> collection maintained by the TriangleSystem, resulting in a triangle.
 
 <img width="700" alt="截屏2023-11-22 18 20 57" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b4c25a01-2756-44c4-b25a-c43786d49834">
 
 <img width="421" alt="截屏2023-11-22 15 55 52" src="https://github.com/Jinaisrz/final_paper/assets/115119995/918c501b-62da-4b7b-9597-42bab3e17044">
 
 ## How do particles and triangles follow the movement?
-我首先使用 ml5.js 来获取手部的关键点坐标。这些坐标代表了手部骨骼的不同点。接着，通过 GetPoints 类在这些骨骼点之间的线（关节矢量）上随机生成一个点，这个点即为粒子的位置。在 ParticleSystem 类中，update 方法负责根据手部的运动更新这些粒子的位置。这意味着粒子会随着手部的移动而移动。同时，discoverNeighbours 方法在 ParticleSystem 中被用来识别彼此接近的粒子。这个方法基于粒子之间的距离来判断它们是否足够靠近，从而可以构成一个三角形。
+I first used ml5.js to get the coordinates of the key points of the hand. These coordinates represent the different points of the hand's bones. Then, the GetPoints class generates a random point on the line (joint vector) between these bone points, which is the position of the particle. In the ParticleSystem class, the update method is responsible for updating the position of these particles based on the movement of the hand. This means that the particles will move with the hand movement. Meanwhile, the discoverNeighbours method is used in ParticleSystem to identify particles that are close to each other. This method determines if the particles are close enough to form a triangle based on the distance between them.
 
-一旦识别出相邻的粒子，TriangleSystem 类中的 addTriangles 方法就会被调用。这个方法接收一组邻近粒子并用它们来创建三角形。每个三角形由三个粒子的位置作为顶点。
+Once neighbouring particles are identified, the addTriangles method of the TriangleSystem class is called. This method takes a set of neighbouring particles and uses them to create triangles. Each triangle consists of the positions of three particles as vertices.
 
-最后，随着粒子位置的更新，由 addTriangles 方法创建的三角形也会相应地动态变化。这样，就形成了一个随着手部运动而变化的动态视觉效果，其中粒子不断地移动和重新排列，而三角形也随之重新构建和渲染。
+Finally, as the particle positions are updated, the triangles created by the addTriangles method dynamically change accordingly. The result is a dynamic visual effect that changes with the movement of the hand, where the particles are constantly moving and rearranging, and the triangles are reconstructed and rendered accordingly.
 
 <img width="1049" alt="17" src="https://github.com/Jinaisrz/final_paper/assets/115119995/3f5571a1-0e5f-4f67-ab6f-214e9ccd51f1">
 
@@ -150,11 +150,11 @@ This mean square error is obtained by calculating the sum of the squares of the 
 
 # Week 15: 10.23-10.29
 ## Cancell process: Mean Squared Error (MSE) for determining the "handshake" behaviour
-本周我取消了，检测握手以及增加粒子和三角形数量的逻辑主要依赖于计算手部关键点的均方误差 (MSE)。平均平方误差是一种用于量化数值集之间差异的测量方法。在这里，它用于确定手部关键点之间的距离，以识别是否发生了握手。当手张开时，20 个关键点较为分散。反之，在握手的手势中，这 20 个关键点会相互靠近，从而导致 MSE 值小于 6000。因此，当 MSE 值低于这个阈值时，就可以判定握手手势已经完成。
+As I cancelled this week, the logic for detecting handshakes and increasing the number of particles and triangles relies heavily on calculating the Mean Squared Error (MSE) at key points on the hand. Mean square error is a measure used to quantify the difference between sets of values. Here, it is used to determine the distance between the key points of the hand to recognise whether a handshake has occurred. When the hand is open, the 20 key points are more spread out. Conversely, during a handshake gesture, these 20 key points are closer to each other, resulting in an MSE value of less than 6000. therefore, when the MSE value is below this threshold, the handshake gesture can be determined to be complete.
 
-但是这种方式让设备运行压力过大，所我只通过判断握手时候每个手指的顶点的变化来判断是否完成握手行为，我首先做出了一个流程图方便我后期的代码理解，大拇指的红色顶点的y值相对于所有其他手指的绿色顶点y值越小，代表手部姿势已经调整到横着的，当4个绿色顶点的x值小于红色顶点的值表示着手指向手心靠拢，且已经摆出握手的姿势。
+But this way to let the device run too much pressure, so I only by judging the handshake when each finger's vertex changes to determine whether the completion of the handshake behaviour, I first made a flowchart to facilitate the understanding of my later code, the thumb's red vertex of the y-value relative to the green vertices of all the other fingers of the y-value the smaller, on behalf of the hand posture has been adjusted to the horizontal, when the 4 green vertices of the x-value is less than the value of the red vertices indicate that the hand pointing to the palm of the hand closer to the handshake has been put out of the posture.
 
-所有我首先通过代码对isFist==true进行判断，当满足条件后我仅仅需有判断大拇指上下移动的范围就好。于是我通过使用thumbHistory记录10次拇指的y值运动，当thumbDiff > 50时，就判断为一次握手。
+So I start by making a judgement on isFist==true in code, and when the condition is met I simply have to have a judgement on how far up and down the thumb moves. So I recorded 10 thumb y-value movements by using thumbHistory, and when thumbDiff > 50, it was judged as a handshake.
 
 <img width="1384" alt="截屏2023-11-21 21 36 20" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f8dc3178-d478-46c0-ad93-7ef94a2f5b30">
 
@@ -172,13 +172,13 @@ The differentiation is initialising lifespan, updating lifespan and checking if 
 <img width="864" alt="19" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b2c98f8b-b20e-4a83-ac2e-c5698f934cc4">
 
 ### Grip frequency affects colour change (for trust level design of colours)
-通过在addTriangles里面的display中绘制三角形之前线将三角形的边框绘制成0，并且调用ColourGenerator设置R,G,B的同时调用fill，通过以下将三角形的填充强度设置的低一些，
+By drawing the front line of the triangle in the display of addTriangles, draw the border of the triangle to 0, and call ColourGenerator to set R,G,B and call fill at the same time, and set the fill intensity of the triangle to a lower level by the following.
 
 fill(amplify(processColor[0]), amplify(processColor[1]), amplify(processColor[2]), 30);
 
-这样三角形的颜色深浅变化实际上是由多个三角形是否重叠形成的颜色深浅变化，例如，粒子的生成是以手的为矢量生成的，无论手如何移动，粒子与矢量的位置总是相对不变的，因此由相同的三个点生成的三角形颜色会更深，而单独一个的颜色会更浅。
+In this way the change in colour shade of a triangle is actually a change in colour shade formed by whether or not multiple triangles overlap, e.g. the particles are generated with the hand's as the vector, and no matter how the hand moves, the position of the particles with respect to the vector is always relatively unchanged, and so a triangle generated from the same three points will be darker in colour, whereas one alone will be lighter in colour.
 
-通过fistCount计算摇手的次数，与屏幕下方的信任等级颜色变化值以颜色过程的方式进行从左往右的像素颜色吸取，并将其填充到三角形中，最终形成颜色的变化。
+The number of hand shakes is calculated by fistCount, which is linked to the trust level colour change value at the bottom of the screen in a colour process that sucks in pixel colours from left to right and fills them into the triangles to create the final colour change.
 
 <img width="559" alt="截屏2023-11-22 16 02 53" src="https://github.com/Jinaisrz/final_paper/assets/115119995/57e4f38d-63a4-4522-90d2-9f886ecaac91">
 
@@ -213,12 +213,12 @@ The error in selecting interest groups by hand recognition is very large because
 <img width="1042" alt="29" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f7bdafe1-5fa2-4216-b861-4fc774c35d54">
 
 ## Change to Mouse Selection
-由于使用均方误差去判读选择兴趣组的坐标误差过大，且不好控制，我选择通过鼠标选择。
+Since using the mean square error to interpret the coordinates of the selected interest group was too large and poorly controlled, I chose to select them via the mouse.
 
 <img width="555" alt="30" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8a15070a-ab2c-4810-a1c2-dc1240c9e1d7">
 
 ## emoji选择
-我通过Particle类的构造函数根据tempChosen 的值为每个粒子分配不同的 emoji。这一逻辑体现在如何根据用户选择的兴趣组（如Cristiano Ronaldo、Emma Watson、Elon Musk）来决定分配给粒子的 emoji。然后在display方法中，您可以将这些 emoji显示在每个粒子上，让每一个粒子中有一个包含一个emoji，从而在屏幕上形成一个由 emoji 构成的动态图案。
+I assign each particle a different emoji based on the value of tempChosen through the constructor of the Particle class.This logic is reflected in how the emoji assigned to the particle are determined based on the user's chosen interest group (e.g., Cristiano Ronaldo, Emma Watson, Elon Musk).Then in the display method, you can display these emoji on each particle so that one of each particle contains an emoji, creating a dynamic pattern of emoji on the screen.
 
 <img width="745" alt="截屏2023-11-22 19 46 50" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b7791bc6-b537-457b-9fc7-82b8ca2996f8">
 
@@ -230,39 +230,39 @@ The error in selecting interest groups by hand recognition is very large because
 
 ![埃隆马斯克](https://github.com/Jinaisrz/final_paper/assets/115119995/f53d7c77-c0e9-4a25-8827-dd05276952b1)
 
-通过angle 调节emoji产生周期性变化，在每次更新粒子时。然后通过设置floatEffect使用 sin(this.angle) 产生周期性波动的值，以模拟漂浮效果，然后通过breathEffect，改变 emoji 的大小或透明度，为 emoji 添加呼吸效果。最终展示在 display方法中。
+Adjust the emoji to produce periodic changes through angle, at each particle update. Then by setting floatEffect to use sin(this.angle) to generate periodic fluctuation in value to simulate a floating effect, and then by using breathEffect, change the size or transparency of the emoji to add a breathing effect to the emoji. The final display is in the display method.
 
 <img width="881" alt="emoji效果的手" src="https://github.com/Jinaisrz/final_paper/assets/115119995/08a344ec-0d69-4c1f-b61b-4a66fd87531c">
 
 # Week 17:  11.6-11.13
-本周主要研究如何同时在两个画面出现两个手，首先通过设置两个系统（system和system1）以及其他的变量，并通过function drawKeypoints函数，用于处理和显示手两只手的关键点，然后需要遍历该手的所有landmarks，keypoint则是其中一个手的当前遍历到的关键点，而keypoint1 是前一个关键点，见以下代码：
+This week we focus on how to have two hands on two screens at the same time, firstly by setting up two systems (system and system1) and other variables, and through the function drawKeypoints function, which is used to process and display the keypoints of the two hands, and then we need to iterate through all the landmarks of that hand, and the keypoint is the current traversed keypoint of one of the hands, and the keypoint1 is the previous keypoint, see the code below:
 
 const keypoint = prediction.landmarks[j]; 
 const keypoint1 = prediction.landmarks[j-1];
 
-然后通过translate()分别来改变和调控两只手的坐标系统，这样可以在在同一个画布上独立地渲染两只手的动态效果，并通过设置线条样式，并根据应用的state1和关键点的位置，在当前关键点和前一个关键点之间绘制一条线，从而形成手的轮廓。
+Then translate() is used to change and modulate the coordinate system of the two hands respectively, so that the dynamics of the two hands can be rendered independently on the same canvas, and the outline of the hand can be formed by setting the line style and drawing a line between the current keypoint and the previous keypoint according to the position of the applied state1 and keypoint.
 
 <img width="1200" alt="截屏2023-11-19 19 26 01" src="https://github.com/Jinaisrz/final_paper/assets/115119995/16085a7a-272b-4f2e-b21d-4d8860ded979">
 
-然后为了让手显示粒子和三角形，我通过使用system1.particles=system.particles和triangles1.triangles=triangles.triangles;把已经完整的粒子系统和三角形系统完成了复制，而粒子系统的迁入也代表了粒子、三角形、颜色、emoji的迁入，但是在实现过程中却出现了bug，明明通过邻居技术判定，两个手指之间的连线是不会连接上的，因为粒子距离过远。
+Then in order for the hand to display particles and triangles, I completed the duplication of the already complete particle system and triangle system by using system1.particles=system.particles and triangles1.triangles=triangles.triangles; and the relocation of the particle system also represents the The relocation of particles, triangles, colours, and emoji, but there was a bug in the implementation, which was clearly determined by the neighbourhood technique that the link between the two fingers would not be connected because the particles were too far away.
 
 ![WechatIMG201](https://github.com/Jinaisrz/final_paper/assets/115119995/13c46155-13a1-4893-80da-576754a2a9d0)
 
-最终我通过查看发现，我未来在屏幕中两个手的会超过选项区域，控制了运动范围，以下为相关代码：
+Eventually I found out by looking at it that my future two hand's in the screen would be over the option area, controlling the range of motion, here is the relevant code：
 
 if(state1!=2||(transX(keypoint[0])>950&&transY(keypoint[1])>43&&transY(keypoint[1])<593))
 if(transX(keypoint[0])>107+width/2&&transX(keypoint[0])<950+width/2)
 
-这是邻居技术的判定也有了限制，为了整体的效果所以我将它关闭了。
+It's a neighbourhood tech judgement that's also got a limit, for the overall effect so I've turned it off.
 
 <img width="1198" alt="截屏2023-11-22 20 17 50" src="https://github.com/Jinaisrz/final_paper/assets/115119995/59f45a8a-f9a7-48cc-8ff0-c0d224cc90ad">
 
 # Week 18: 11.14-11.21
-## 手势选择以及失控
-我通过监测手势位置并判断是否发生了握手动作，从而触发相应的交互效果，通过使用手势位置监测handp方法实时追踪手的位置，判断手是否进入了两个预定区域A或B中的某一个。然后通过握手检测（isFist）判断
-如果选择了B（boom 为 false），则程序保持当前状态，直到用户选择A。这样的逻辑允许用户通过手势在不同选项之间进行选择和切换，并播放提前设置好的mp3失控音频，B则不变。最后通过tipText 数组用于存储所有将要在屏幕上显示的文本消息。通过逐步增加 yPos 变量的值，您可以在屏幕上垂直滚动这些文本消息。在 draw 函数中的 for 循环利用 yPos 来确定当前显示哪些文本消息。随着 yPos 的增加，不同的文本消息会被显示出来，从而在屏幕上创建一个连续滚动的效果。一旦 yPos 达到特定值，它会重置为初始值，实现文本滚动的循环效果。
+## Selection of potentials and loss of control
+I trigger the appropriate interaction effect by monitoring the hand position and determining whether a handshake has occurred, by tracking the position of the hand in real time using the handposition monitoring handp method to determine whether the hand has entered one of the two predetermined areas, A or B. Then, by using the handshake detection (isFist) to determine
+If B is selected (boom is false), the application maintains the current state until the user selects A. This logic allows the user to select and switch between the different options through gestures and play the pre-set mp3 runaway audio, while B remains unchanged. Finally the tipText array is used to store all the text messages that will be displayed on the screen. By incrementally increasing the value of the yPos variable, you can scroll these text messages vertically on the screen. The for loop in the draw function uses yPos to determine which text messages are currently displayed. As yPos increases, different text messages are displayed, creating a continuous scrolling effect on the screen. Once yPos reaches a certain value, it resets to the initial value, creating a circular effect of scrolling text.
 
 ## Changes to the thesis with tutor
 <img width="1026" alt="截屏2023-11-22 20 39 35" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8759b341-f029-4908-a977-4ed1e4a06fdb">
-根据老师提示的内容基本全部改完，不过老师所认为的文献综述部分其实社会问题研究部分每一阶段的分析与总结，这部分会承上启下论文，并且有作为Question的作用。
+According to the teacher prompted the content of basically all the changes, but the teacher that the literature review part of the social issues in fact part of the analysis and summary of each stage of the research part of this part of the paper will be carried on the next, and have a role as a Question.
 
