@@ -125,13 +125,27 @@ I found a reference where the particles and interconnecting lines can represent 
 <img width="421" alt="截屏2023-11-22 15 55 52" src="https://github.com/Jinaisrz/final_paper/assets/115119995/918c501b-62da-4b7b-9597-42bab3e17044">
 
 ## How do particles and triangles follow the movement?
-Points a and b are two bone points that are connected to be the vector of joints. Then a random red point is generated on the vector based on GetPoints. Then make a normal line at the red point position of a vector, offsetPointByWidth generates the blue bias point, and offsetDistance sets the offset range to ±10. Use discoverNeighbours in ParticleSystem to get the bias points' position, then use addTriangles to generate the neighbourhood data, then use display to render the triangles out.
+我首先使用 ml5.js 来获取手部的关键点坐标。这些坐标代表了手部骨骼的不同点。接着，通过 GetPoints 类在这些骨骼点之间的线（关节矢量）上随机生成一个点，这个点即为粒子的位置。在 ParticleSystem 类中，update 方法负责根据手部的运动更新这些粒子的位置。这意味着粒子会随着手部的移动而移动。同时，discoverNeighbours 方法在 ParticleSystem 中被用来识别彼此接近的粒子。这个方法基于粒子之间的距离来判断它们是否足够靠近，从而可以构成一个三角形。
+
+一旦识别出相邻的粒子，TriangleSystem 类中的 addTriangles 方法就会被调用。这个方法接收一组邻近粒子并用它们来创建三角形。每个三角形由三个粒子的位置作为顶点。
+
+最后，随着粒子位置的更新，由 addTriangles 方法创建的三角形也会相应地动态变化。这样，就形成了一个随着手部运动而变化的动态视觉效果，其中粒子不断地移动和重新排列，而三角形也随之重新构建和渲染。
+
 <img width="1049" alt="17" src="https://github.com/Jinaisrz/final_paper/assets/115119995/3f5571a1-0e5f-4f67-ab6f-214e9ccd51f1">
 
+<img width="316" alt="21" src="https://github.com/Jinaisrz/final_paper/assets/115119995/9f9e0c28-d09a-48bd-b20a-2251eaad1c9a">
+
+
 # Week 14: 10.9-10.15
-## Mean Squared Error (MSE) for determining the "handshake" behaviour
-In this week, In our system, the logic for detecting a handshake and increasing the number of particles and triangles heavily relies on calculating the Mean Squared Error (MSE) of key points on the hand. Mean Squared Error is a measure used to quantify the difference between sets of values. In this context, it's used to determine how close the key points of a hand are to each other in order to recognize if a handshake has occurred. When the hand is open, the 20 key points are more dispersed. Conversely, during a handshake gesture, these 20 points are collectively closer, resulting in an MSE value less than 6,000. Therefore, when the MSE drops below this threshold, it is determined that a handshake gesture has been completed.
-<img width="926" alt="18" src="https://github.com/Jinaisrz/final_paper/assets/115119995/98fb6b4f-d334-4d5b-aa8a-8317dc58eabb">
+## Cancell process: Mean Squared Error (MSE) for determining the "handshake" behaviour
+本周我取消了，检测握手以及增加粒子和三角形数量的逻辑主要依赖于计算手部关键点的均方误差 (MSE)。平均平方误差是一种用于量化数值集之间差异的测量方法。在这里，它用于确定手部关键点之间的距离，以识别是否发生了握手。当手张开时，20 个关键点较为分散。反之，在握手的手势中，这 20 个关键点会相互靠近，从而导致 MSE 值小于 6000。因此，当 MSE 值低于这个阈值时，就可以判定握手手势已经完成。
+
+但是这种方式让设备运行压力过大，所我只通过判断握手时候每个手指的顶点的变化来判断是否完成握手行为，我首先做出了一个流程图方便我后期的代码理解，大拇指的红色顶点的y值相对于所有其他手指的绿色顶点y值越小，代表手部姿势已经调整到横着的，当4个绿色顶点的x值小于红色顶点的值表示着手指向手心靠拢，且已经摆出握手的姿势。
+
+所有我首先通过代码对isFist==true进行判断，当满足条件后我仅仅需有判断大拇指上下移动的范围就好。于是我通过使用thumbHistory记录10次拇指的y值运动，当thumbDiff > 50时，就判断为一次握手。
+
+<img width="1384" alt="截屏2023-11-21 21 36 20" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f8dc3178-d478-46c0-ad93-7ef94a2f5b30">
+
 
 # Week 15: 10.16-10.22
 ## Particles can't disappear, they need to keep growing
