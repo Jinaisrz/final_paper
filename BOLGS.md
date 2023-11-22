@@ -1,6 +1,6 @@
-### Name：Jin Yu
-### Student number：21016015
-### Github Link：https://github.com/Jinaisrz/final_paper/blob/main/BOLGS.md
+# Name：Jin Yu
+# Student number：21016015
+# Github Link：https://github.com/Jinaisrz/final_paper/blob/main/BOLGS.md
 # Week 1: 7.10-7.16
 My previous research explored the changes in Chinese strong ties culture in the context of the Internet and found that traditional strong ties were transformed into more multidimensional digital strong ties. In that week's research, I read a lot of literature, and in one of the studies, I pointed out that due to the emergence of the Internet, the traditional Chinese blood ties, geographic ties, karmic ties, and interest relationship have become digital strong ties, and that "interest relationship" are the most emerging and easier group to reach digital strong ties, and I used the interviews with members of gaming and fan circles to deduce and prove a model for the formation of digital strong ties. We reasoned and proved the formation model of digital strong ties, and found that digital strong ties has wider coverage and lower maintenance cost than traditional strong ties.
 
