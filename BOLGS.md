@@ -146,6 +146,12 @@ I found a reference where the particles and interconnecting lines can represent 
 
 <img width="1384" alt="截屏2023-11-21 21 36 20" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f8dc3178-d478-46c0-ad93-7ef94a2f5b30">
 
+<img width="480" alt="截屏2023-11-22 19 10 22" src="https://github.com/Jinaisrz/final_paper/assets/115119995/bb83d9b2-ee86-49bb-86f6-fafc119fd5db">
+
+<img width="462" alt="截屏2023-11-22 19 10 46" src="https://github.com/Jinaisrz/final_paper/assets/115119995/35052477-5f7e-4356-8cfb-5ca8259883b9">
+
+<img width="431" alt="截屏2023-11-22 19 12 06" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b716cd41-49c5-43d0-a23a-8f71c0a1da8e">
+
 
 # Week 15: 10.16-10.22
 ## Particles can't disappear, they need to keep growing
