@@ -1,42 +1,42 @@
-# Week 1: 7.3-7.9
+# Week 1: 7.10-7.16
 My previous research explored the changes in Chinese strong ties culture in the context of the Internet and found that traditional strong ties were transformed into more multidimensional digital strong ties. In that week's research, I read a lot of literature, and in one of the studies, I pointed out that due to the emergence of the Internet, the traditional Chinese blood ties, geographic ties, karmic ties, and interest relationship have become digital strong ties, and that "interest relationship" are the most emerging and easier group to reach digital strong ties, and I used the interviews with members of gaming and fan circles to deduce and prove a model for the formation of digital strong ties. We reasoned and proved the formation model of digital strong ties, and found that digital strong ties has wider coverage and lower maintenance cost than traditional strong ties.
 
 <img width="1050" alt="1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/4e5ed5e8-ed6e-4972-bbfe-d1c7e16fc7a0">
 <img width="1015" alt="2" src="https://github.com/Jinaisrz/final_paper/assets/115119995/93760580-4b5d-43ad-bf77-b0660e89c6fa">
 
-# Week 2: 7.10-7.16
+# Week 2: 7.17-7.23
 In that week, I analyzed Dr. Yanjie Bian's definition of traditional strong ties, the process of upgrading weak ties into digital strong ties, and the initial and stable phases of trust building in digital strong ties, and found that trust is like a kind of "social currency" that circulates multidimensionally in individual and group strong ties, because people have to build up enough trust in order to establish digital strong ties in any circumstances, and this kind of digital strong ties must have been born from long-time interactions with multidimensional interactions in the digital platform.
 
-# Week 3: 7.17-7.23
+# Week 3: 7.24-7.30
 Since trust is like a kind of "social currency", I try to analyze how trust circulates as a kind of currency in digital strong ties in a multi-dimensional way. Through reading the literature and analyzing the traditional strong ties and digital strong ties, I found that the core difference between them lies in the starting point of forming relationship - digital technology, because digital technology and platform are the foundation of the development of digital strong ties, and then rise to the establishment of person-to-person and person-to-group digital strong ties. Therefore, I define the direction of the circulation of trust as "trust-digital technologies and platforms-individuals-groups-results", but the details of the circulation need to be considered in this process.
 <img width="727" alt="3" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2ba4a90e-fc3a-4751-a792-80031d00708d">
 
-# Week 4: 7.24-7.30
+# Week 4:7.31-8.6
 I think out the direction of the circulation of trust based on last week: trust-digital technologies and platforms-individuals-groups-results, and I try to build a model of the circulation of trust in strong digital ties. Taking trust as the center to disperse outward to the first level - digital technology and platform layer, I read the literature and look back to the previous interviews, and finally found that trust is firstly built up by the reputation of the platform to a certain extent, and the user's interest and interaction with some people in it will be recorded by the data, so as to recommend the corresponding community, and thus may be better able to reach the digital strong ties. In my exploration of other social platforms digital platforms also quantify trust in multiple ways, e.g., in QQ, the two interacting parties automatically set a friendship level by the number of days the chat lasts each day, and when the interaction is interrupted for more than 3 days it is downgraded, which uses the frequency of people's interactions as a way to quantify trust.
 ![4](https://github.com/Jinaisrz/final_paper/assets/115119995/03de8869-cb5c-44a8-b684-5fceac42df68)
 
 In my personal level exploration, I find that people building digital identities in a more authentic, complete, coherent, and sincere way in a secure platform leads to more stable personal trust, deep self-disclosure, and strengthened trust and digitally strong ties with others. From this I find that trust has quantifiable characteristics.
 
-# Week 5: 7.31-8.6
+# Week 5: 8.7-8.13
 I encountered a lot of difficulties in that week's research, especially in the research on the group level, I have studied a lot of literature on virtual communities, digital identity of groups and other directions, and found that the topic could not be further deepened. So I found a typical "interest relationship" individual around me, and through interviewing her, I found that as fans of celebrities, they are given many digital socialization methods by the platform in their own digital strong ties, and they are also differentiated into obvious grades in the group through the interaction design of the platform, and the higher the grade, the higher the degree of trust they have and the corresponding benefits they will get. The higher the rank, the more trusted they are and the more benefits they receive, and this hierarchy of trust leads to a more orderly digital strong ties community. The rich interaction methods within the community developed by the digital platform will also increase the digital strong ties among the members, such as completing the system tasks together, which will increase the two-way trust and thus better shape the collective identity and culture.
 Through Week 4 and Week 5, I found that trust circulates in digital strong ties in ways that can be quantified, facilitate deep socialization over time, the maintenance and shaping of group values, and extend digital strong ties.
 
-# Week 6: 8.7-8.13
+# Week 6: 8.14-8.20
 The difficult point of the week's research is to dig deeper into the critical direction of the topic, digging over the direction of the entanglement in the digital strong ties of trust fraud, digital strong ties of the causes of instability of social trust, the virtual true and false, whether the trust is fragmented, the digital strong ties of the group polarization, etc., the week has been constantly going to look for breakthroughs, the readings of more than 50 papers.
 
-# Week 7: 8.14-8.20
+# Week 7: 8.21-8.27
 That week I refreshed all the existing papers to make all the textual content more concise so as to try to find a point of strength for the paper, and eventually realized that all the directions I took last week would make the context incoherent. I looked at all the analytics and found that the trust built in the context of digitally strong ties with interesting people is collected and pushed by algorithmic preferences and built by multiple interaction design mechanisms, which is why I questioned, is the trust built in the context of digitally strong ties pure? Is it all about "free will"? So I started with a simple analysis of the algorithmic guidance of trust and the intervention of interaction design mechanisms, and found that algorithms and recommender systems are constantly guiding the direction of individual social groups based on individual interests and behaviors, and through reading papers, I found that the quantization of trust will turn what should be a rich and colorful trust into a single one-sided tendency of trust hierarchy.
 
-# Week 8: 8.21-8.27
+# Week 8: 8.28-9.3
 In that week, I analyzed last week's research and read the paper, and found that the platform as the soil for the development of strong digital ties exploits the trust of the digital strong ties of "interest relationship", and I firstly found some practical examples that can prove this speculation, and found that trust is also used for the development of digital platforms and user adhesion, which in fact strengthens the relationship between people and the digital platforms. strong digital ties with digital platforms. In other studies, it has been pointed out that platform capitalism and algorithms change the structure of trust, transforming trust ties into trust capital, which appears to be the result of autonomous decision-making brought about by people's "free will", but is essentially the result of the platform capital's purposeful steering using smart algorithms.
 
-# Week 9: 8.28-9.3
+# Week 9: 9.4-9.10
 During the week I searched for papers on the platform's trust capital, free will, and the economy of "interest relationship" to support the theory and enrich the overall content and structure of the paper, and to come up with an analysis of all of last week's content, ultimately reflecting on the blurring of the boundaries of people's freedom of trust and the loss of sovereignty over their trust, and reflecting on their perspectives.
 
-# Week 10: 9.4-9.10
+# Week 10: 9.11-9.17
 During that week, I streamlined any lengthy or unnecessary content in the paper and then summarized the research. Then, I combed through all the cited literature in the research and labeled it with its proper serial number and reordered the article titles of the existing paper.
 
-# Week 11: 9.11-9.17
+# Week 11: 9.18-9.24
 Based on my research in the previous weeks, I thought about the scenarios and I looked at a range of computer artists such as: Rafael Lozano-Hemmer's "The Listening Post" by Mark Hansen and Ben Rubin - a dynamic art installation that collects and broadcasts text from internet chat rooms in real time. Jenny Holzer's LED installations - Jenny Holzer uses scrolling LED text to convey information, thoughts and social commentary. "Processing" by Casey Reas and Ben Fry. Kyle McDonald's "Social Soul," an immersive, interactive installation that allows users to experience the social media lives of others, and Golan Levin, a new media artist and engineer who often explores the interactions between humans and machines. His works such as "Double-Taker (Snout)" use computer vision and robotics to mimic human social behaviour.
 
 After looking at the artist references, I started thinking about project ideas.
@@ -44,7 +44,7 @@ After looking at the artist references, I started thinking about project ideas.
 People to "call" behaviour in front of the screen receiver speaker to send their preferences for interaction, the system will automatically match a community point, the more people interact with the community in front of the screen, the coarser the strength of the relationship, next to the interaction to achieve the trust index, and in the strength of the relationship with the algorithm inside! visual elements such as vision, delivery of interactive content, and empathy. But when people stop interacting, the system allows the strength to diminish and people are in a passive interaction process, which is used to satirise the impact of the system on people's "trust" building, until finally the screen plays a film on the evolution of the trust structure of the digital strong ties to make a viewpoint.
 ![5](https://github.com/Jinaisrz/final_paper/assets/115119995/a1adecba-22dc-47cb-a62d-9e47949b1d17)
 
-# Week 12: 9.18-9.24
+# Week 12: 9.25-10.1
 Unsatisfied with the first scenario, I rethought a new one and settled on one that was more related to human "trust" behaviour.
 
 I create a social platform, the audience can experience the project from the user's perspective. This plan is inspired by people's the most typical trust behaviour-- the "handshake".
@@ -67,7 +67,7 @@ Hand movements are captured through leap motion LM010 capture, and I'll use proc
 ### Main Visual Design
 <img width="1293" alt="8" src="https://github.com/Jinaisrz/final_paper/assets/115119995/3e4d8443-b8f4-4c15-a564-ecd39d34a297">
 
-# Week 13: 9.25-10.1
+# Week 13: 10.2-10.8
 ## Tutor feedback
 <img width="936" alt="feedback1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/51e04797-217e-4910-b2b4-bad6bd39f471">
 
@@ -84,7 +84,7 @@ Much of Marysia's feedback came from the social research portion of the disserta
 4. Difficult to see hand outline
 <img width="1027" alt="11" src="https://github.com/Jinaisrz/final_paper/assets/115119995/12e31ac5-7f53-4135-988c-cad2656fb222">
 
-# Week 14: 10.2-10.8
+# Week 14: 10.9-10.15
 ## Tutor feedback
 <img width="928" alt="feedback2" src="https://github.com/Jinaisrz/final_paper/assets/115119995/39dd6cb6-7308-4b74-9957-cfc120b3f66d">
 
@@ -96,7 +96,6 @@ The main tip from the mentor feedback is to avoid really storing personal inform
 <img width="1022" alt="截屏2023-11-21 17 53 44" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8d54bce0-28c6-401e-87ad-61d28361a919">
 
 <img width="1200" alt="截屏2023-11-21 17 47 50" src="https://github.com/Jinaisrz/final_paper/assets/115119995/1b75b6bc-cf46-4356-bfcb-31fdb5944ef9">
-
 
 ### The reference of hand model:
 https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
@@ -135,7 +134,7 @@ I found a reference where the particles and interconnecting lines can represent 
 
 <img width="316" alt="21" src="https://github.com/Jinaisrz/final_paper/assets/115119995/9f9e0c28-d09a-48bd-b20a-2251eaad1c9a">
 
-# Week 14: 10.9-10.15
+# Week 14: 10.16-10.22
 ## Mean square error to determine the handshake and thus the colour change
 ### Mean square error handshake judgement
 With my drawKeypoints function, the program uses the gesture recognition feature to detect hand poses. This procedure I started by traversing the predictions array, which contains the data for each hand recognised by the handpose model. For each hand's predictions, the program traverses all of its keypoints, draws those points, and calculates their mean square error with respect to the hand's centroid.
@@ -149,7 +148,7 @@ This mean square error is obtained by calculating the sum of the squares of the 
 ### Resulting image of the mean square error handshake judgement
 <img width="857" alt="23" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b5737ada-0895-4c83-8acf-d6a7ff5362ae">
 
-# Week 15: 10.16-10.22
+# Week 15: 10.23-10.29
 ## Cancell process: Mean Squared Error (MSE) for determining the "handshake" behaviour
 本周我取消了，检测握手以及增加粒子和三角形数量的逻辑主要依赖于计算手部关键点的均方误差 (MSE)。平均平方误差是一种用于量化数值集之间差异的测量方法。在这里，它用于确定手部关键点之间的距离，以识别是否发生了握手。当手张开时，20 个关键点较为分散。反之，在握手的手势中，这 20 个关键点会相互靠近，从而导致 MSE 值小于 6000。因此，当 MSE 值低于这个阈值时，就可以判定握手手势已经完成。
 
@@ -172,7 +171,6 @@ The differentiation is initialising lifespan, updating lifespan and checking if 
 
 <img width="864" alt="19" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b2c98f8b-b20e-4a83-ac2e-c5698f934cc4">
 
-
 ### Grip frequency affects colour change (for trust level design of colours)
 通过在addTriangles里面的display中绘制三角形之前线将三角形的边框绘制成0，并且调用ColourGenerator设置R,G,B的同时调用fill，通过以下将三角形的填充强度设置的低一些，
 
@@ -186,8 +184,7 @@ fill(amplify(processColor[0]), amplify(processColor[1]), amplify(processColor[2]
 
 <img width="954" alt="截屏2023-11-22 16 01 56" src="https://github.com/Jinaisrz/final_paper/assets/115119995/7442531b-c00c-4dac-8599-c2265f8fa07d">
 
-
-# Week 16: 10.23-10.29
+# Week 16: 10.30-11.5
 ## Mean square error handshake to select images for home page interest groups
 
 ### Defining option points (checkpoints)：
@@ -216,10 +213,15 @@ The error in selecting interest groups by hand recognition is very large because
 <img width="1042" alt="29" src="https://github.com/Jinaisrz/final_paper/assets/115119995/f7bdafe1-5fa2-4216-b861-4fc774c35d54">
 
 ## Change to Mouse Selection
+由于使用均方误差去判读选择兴趣组的坐标误差过大，且不好控制，我选择通过鼠标选择。
+
 <img width="555" alt="30" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8a15070a-ab2c-4810-a1c2-dc1240c9e1d7">
 
-
 ## emoji选择
+我通过Particle类的构造函数根据tempChosen 的值为每个粒子分配不同的 emoji。这一逻辑体现在如何根据用户选择的兴趣组（如Cristiano Ronaldo、Emma Watson、Elon Musk）来决定分配给粒子的 emoji。然后在display方法中，您可以将这些 emoji显示在每个粒子上，让每一个粒子中有一个包含一个emoji，从而在屏幕上形成一个由 emoji 构成的动态图案。
+
+<img width="745" alt="截屏2023-11-22 19 46 50" src="https://github.com/Jinaisrz/final_paper/assets/115119995/b7791bc6-b537-457b-9fc7-82b8ca2996f8">
+
 <img width="1283" alt="emoji-1" src="https://github.com/Jinaisrz/final_paper/assets/115119995/860cbb53-c9a6-499e-b602-8e2dd2db4d89">
 
 <img width="1284" alt="emoji-2" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2c5b273a-ddf3-4eb7-a14e-bacadb36f3ca">
@@ -228,9 +230,39 @@ The error in selecting interest groups by hand recognition is very large because
 
 ![埃隆马斯克](https://github.com/Jinaisrz/final_paper/assets/115119995/f53d7c77-c0e9-4a25-8827-dd05276952b1)
 
+通过angle 调节emoji产生周期性变化，在每次更新粒子时。然后通过设置floatEffect使用 sin(this.angle) 产生周期性波动的值，以模拟漂浮效果，然后通过breathEffect，改变 emoji 的大小或透明度，为 emoji 添加呼吸效果。最终展示在 display方法中。
 
-# Week 17: 10.30-11.5
+<img width="881" alt="emoji效果的手" src="https://github.com/Jinaisrz/final_paper/assets/115119995/08a344ec-0d69-4c1f-b61b-4a66fd87531c">
 
-# Week 18: 11.6-11.13
+# Week 17:  11.6-11.13
+本周主要研究如何同时在两个画面出现两个手，首先通过设置两个系统（system和system1）以及其他的变量，并通过function drawKeypoints函数，用于处理和显示手两只手的关键点，然后需要遍历该手的所有landmarks，keypoint则是其中一个手的当前遍历到的关键点，而keypoint1 是前一个关键点，见以下代码：
 
-# Week 19: 11.14-11.21
+const keypoint = prediction.landmarks[j]; 
+const keypoint1 = prediction.landmarks[j-1];
+
+然后通过translate()分别来改变和调控两只手的坐标系统，这样可以在在同一个画布上独立地渲染两只手的动态效果，并通过设置线条样式，并根据应用的state1和关键点的位置，在当前关键点和前一个关键点之间绘制一条线，从而形成手的轮廓。
+
+<img width="1200" alt="截屏2023-11-19 19 26 01" src="https://github.com/Jinaisrz/final_paper/assets/115119995/16085a7a-272b-4f2e-b21d-4d8860ded979">
+
+然后为了让手显示粒子和三角形，我通过使用system1.particles=system.particles和triangles1.triangles=triangles.triangles;把已经完整的粒子系统和三角形系统完成了复制，而粒子系统的迁入也代表了粒子、三角形、颜色、emoji的迁入，但是在实现过程中却出现了bug，明明通过邻居技术判定，两个手指之间的连线是不会连接上的，因为粒子距离过远。
+
+![WechatIMG201](https://github.com/Jinaisrz/final_paper/assets/115119995/13c46155-13a1-4893-80da-576754a2a9d0)
+
+最终我通过查看发现，我未来在屏幕中两个手的会超过选项区域，控制了运动范围，以下为相关代码：
+
+if(state1!=2||(transX(keypoint[0])>950&&transY(keypoint[1])>43&&transY(keypoint[1])<593))
+if(transX(keypoint[0])>107+width/2&&transX(keypoint[0])<950+width/2)
+
+这是邻居技术的判定也有了限制，为了整体的效果所以我将它关闭了。
+
+<img width="1198" alt="截屏2023-11-22 20 17 50" src="https://github.com/Jinaisrz/final_paper/assets/115119995/59f45a8a-f9a7-48cc-8ff0-c0d224cc90ad">
+
+# Week 18: 11.14-11.21
+## 手势选择以及失控
+我通过监测手势位置并判断是否发生了握手动作，从而触发相应的交互效果，通过使用手势位置监测handp方法实时追踪手的位置，判断手是否进入了两个预定区域A或B中的某一个。然后通过握手检测（isFist）判断
+如果选择了B（boom 为 false），则程序保持当前状态，直到用户选择A。这样的逻辑允许用户通过手势在不同选项之间进行选择和切换，并播放提前设置好的mp3失控音频，B则不变。最后通过tipText 数组用于存储所有将要在屏幕上显示的文本消息。通过逐步增加 yPos 变量的值，您可以在屏幕上垂直滚动这些文本消息。在 draw 函数中的 for 循环利用 yPos 来确定当前显示哪些文本消息。随着 yPos 的增加，不同的文本消息会被显示出来，从而在屏幕上创建一个连续滚动的效果。一旦 yPos 达到特定值，它会重置为初始值，实现文本滚动的循环效果。
+
+## Changes to the thesis with tutor
+<img width="1026" alt="截屏2023-11-22 20 39 35" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8759b341-f029-4908-a977-4ed1e4a06fdb">
+根据老师提示的内容基本全部改完，不过老师所认为的文献综述部分其实社会问题研究部分每一阶段的分析与总结，这部分会承上启下论文，并且有作为Question的作用。
+
