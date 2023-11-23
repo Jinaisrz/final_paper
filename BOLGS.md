@@ -1,6 +1,21 @@
 # Name：Jin Yu
 # Student number：21016015
-# Github Link：https://github.com/Jinaisrz/final_paper/blob/main/BOLGS.md
+# Github Link：
+https://github.com/Jinaisrz/final_paper/blob/main/BOLGS.md
+## Reference
+### Project vision and basic technology reference, trianglesystem, particalsystem, discoverNeighbours, ColourGenerator:
+https://openprocessing.org/sketch/1901346
+### float effect: 
+https://www.cssscript.com/infinite-float-effect-javascript-css3-floating-js/
+### Bias point and bone binding principle:
+https://editor.p5js.org/Sakura15/sketches/DByxkiHXi
+### noStroke:
+https://p5js.org/reference/#/p5/noStroke
+### state:
+https://editor.p5js.org/lmccart/sketches/rJGzVbn0l
+### handpose:
+https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
+
 # Week 1: 7.10-7.16
 My previous research explored the changes in Chinese strong ties culture in the context of the Internet and found that traditional strong ties were transformed into more multidimensional digital strong ties. In that week's research, I read a lot of literature, and in one of the studies, I pointed out that due to the emergence of the Internet, the traditional Chinese blood ties, geographic ties, karmic ties, and interest relationship have become digital strong ties, and that "interest relationship" are the most emerging and easier group to reach digital strong ties, and I used the interviews with members of gaming and fan circles to deduce and prove a model for the formation of digital strong ties. We reasoned and proved the formation model of digital strong ties, and found that digital strong ties has wider coverage and lower maintenance cost than traditional strong ties.
 
@@ -256,6 +271,8 @@ Eventually I found out by looking at it that my future two hand's in the screen 
 if(state1!=2||(transX(keypoint[0])>950&&transY(keypoint[1])>43&&transY(keypoint[1])<593))
 if(transX(keypoint[0])>107+width/2&&transX(keypoint[0])<950+width/2)
 
+At the same time, it is necessary to control the generation of particles, and use slice(0, system.articles.length/3) to reserve the first third of the particle reserve to control the total number.
+
 It's a neighbourhood tech judgement that's also got a limit, for the overall effect so I've turned it off.
 
 <img width="1198" alt="截屏2023-11-22 20 17 50" src="https://github.com/Jinaisrz/final_paper/assets/115119995/59f45a8a-f9a7-48cc-8ff0-c0d224cc90ad">
@@ -268,4 +285,30 @@ If B is selected (boom is false), the application maintains the current state un
 ## Changes to the thesis with tutor
 <img width="1026" alt="截屏2023-11-22 20 39 35" src="https://github.com/Jinaisrz/final_paper/assets/115119995/8759b341-f029-4908-a977-4ed1e4a06fdb">
 According to the teacher prompted the content of basically all the changes, but the teacher that the literature review part of the social issues in fact part of the analysis and summary of each stage of the research part of this part of the paper will be carried on the next, and have a role as a Question.
+
+## Final effect
+### Front page
+<img width="1200" alt="截屏2023-11-23 04 16 34" src="https://github.com/Jinaisrz/final_paper/assets/115119995/9454c26a-0728-4b9f-ae61-155826169075">
+
+### Interest selection page
+<img width="1197" alt="截屏2023-11-23 04 19 35" src="https://github.com/Jinaisrz/final_paper/assets/115119995/14b1642f-349a-4226-b345-a7785ea818a8">
+
+### Handshake interface
+
+![65c7d81fd5ebeda866e1ce160c014eee](https://github.com/Jinaisrz/final_paper/assets/115119995/9c1f3975-565f-4e58-abe5-30d0e094586c)
+
+![912430371bb61aa98480d3c47550bff7](https://github.com/Jinaisrz/final_paper/assets/115119995/f935fbde-6a6c-41dc-859c-84a4e60825d7)
+
+
+<img width="1599" alt="f2dae46df5613a7a03ab4cfb0b6d0aac" src="https://github.com/Jinaisrz/final_paper/assets/115119995/09fd1f84-cc04-465c-9c7a-a1e578c9f6cc">
+
+![70f5ff397e9557c2094dc526f456d9c1](https://github.com/Jinaisrz/final_paper/assets/115119995/e6df900d-c32e-4b66-b4cb-868200aa5267)
+
+<img width="848" alt="截屏2023-11-23 02 25 18" src="https://github.com/Jinaisrz/final_paper/assets/115119995/2096429a-8fb5-4336-9463-c75d6c23d786">
+
+### Two-hand multiple-choice question interface
+
+![a612c5e11b205e784fb949912a7b3a1b](https://github.com/Jinaisrz/final_paper/assets/115119995/421600a1-1fee-4589-92f0-cdaee4cffff8)
+
+![4c25bd29da227f22ae2fd28121e07883](https://github.com/Jinaisrz/final_paper/assets/115119995/d7484e55-9069-46eb-974c-85a304a855db)
 
