@@ -6,18 +6,12 @@
 ### Complete visualisation and operational procedures: https://youtu.be/s7owi1c-NfY
 
 # Reference
-### Project vision and basic technology reference, trianglesystem, particalsystem, discoverNeighbours, ColourGenerator:
-https://openprocessing.org/sketch/1901346
-### float effect: 
-https://www.cssscript.com/infinite-float-effect-javascript-css3-floating-js/
-### Bias point and bone binding principle:
-https://editor.p5js.org/Sakura15/sketches/DByxkiHXi
-### noStroke:
-https://p5js.org/reference/#/p5/noStroke
-### state:
-https://editor.p5js.org/lmccart/sketches/rJGzVbn0l
-### handpose:
-https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
+### Project vision and basic technology reference, trianglesystem, particalsystem, discoverNeighbours, ColourGenerator: https://openprocessing.org/sketch/1901346
+### float effect: https://www.cssscript.com/infinite-float-effect-javascript-css3-floating-js/
+### Bias point and bone binding principle: https://editor.p5js.org/Sakura15/sketches/DByxkiHXi
+### noStroke: https://p5js.org/reference/#/p5/noStroke
+### state: https://editor.p5js.org/lmccart/sketches/rJGzVbn0l
+### handpose: https://editor.p5js.org/ima_ml/sketches/lrBwwxGiF
 
 # Week 1: 7.10-7.16
 My previous research explored the changes in Chinese strong ties culture in the context of the Internet and found that traditional strong ties were transformed into more multidimensional digital strong ties. In that week's research, I read a lot of literature, and in one of the studies, I pointed out that due to the emergence of the Internet, the traditional Chinese blood ties, geographic ties, karmic ties, and interest relationship have become digital strong ties, and that "interest relationship" are the most emerging and easier group to reach digital strong ties, and I used the interviews with members of gaming and fan circles to deduce and prove a model for the formation of digital strong ties. We reasoned and proved the formation model of digital strong ties, and found that digital strong ties has wider coverage and lower maintenance cost than traditional strong ties.
