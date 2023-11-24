@@ -1,7 +1,7 @@
 # Name: Jin Yu    |    Student number: 21016015 
 
 ### Github Link：https://github.com/Jinaisrz/final_paper/blob/main/BOLGS.md
-### Final Work video：https://youtu.be/W3hGFIwyD0M
+### An oral project report-video：https://youtu.be/W3hGFIwyD0M
 ### Handshake Interaction Flow: https://youtu.be/s7owi1c-NfY
 ### Complete visualisation and operational procedures: https://youtu.be/s7owi1c-NfY
 
