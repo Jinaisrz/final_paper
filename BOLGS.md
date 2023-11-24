@@ -1,7 +1,11 @@
 # Name：Jin Yu
 # Student number：21016015
-# Github Link：
-https://github.com/Jinaisrz/final_paper/blob/main/BOLGS.md
+# Github Link：https://github.com/Jinaisrz/final_paper/blob/main/BOLGS.md
+# Final Work video：https://youtu.be/W3hGFIwyD0M
+# Handshake Interaction Flow: https://youtu.be/s7owi1c-NfY
+# Complete visualisation and operational procedures: https://youtu.be/s7owi1c-NfY
+
+
 ## Reference
 ### Project vision and basic technology reference, trianglesystem, particalsystem, discoverNeighbours, ColourGenerator:
 https://openprocessing.org/sketch/1901346
